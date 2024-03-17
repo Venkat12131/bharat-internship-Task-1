@@ -1,0 +1,506 @@
+*{
+    padding:0px;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+
+}
+body{
+    background-color: #101010;
+    
+}
+
+.logo img{
+    width:65px;
+    height:65px;
+}
+.navbar-main{
+    display: flex;
+    
+    justify-content: space-around;
+    top:25px;
+    margin: auto;
+}
+.navbar-main a{
+    color:darkgray;
+    text-decoration: none;
+    padding: 0 8px;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-transform:uppercase ;
+    font-size: 15px;
+    letter-spacing: .5px;
+    position: relative;
+    top:-45px;
+    margin: auto;
+
+}
+.Home a{
+    margin-left: 275px;
+}
+.navbar-main a:hover{
+    color:white;
+}
+.navbar-main a:after{
+    content: "";
+    background-color: rgb(221, 92, 221);
+    width:0;
+    height:3px;
+    position: absolute;
+    bottom:-8px;
+    left:0px;
+    transition: 0.3s;
+
+}
+.navbar-main a:hover:after{
+    width: 100%;
+}
+.port-img img{
+    width:250px;
+    height:250px;
+    background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.6));
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right:155px;
+    top:125px;
+    transition: img 0.5s,transform 0.5s;
+}
+.port-img img:hover{
+    transform: translateY(-8px);
+    
+    box-shadow: 0px 0px 12px rgb(221, 92, 221);
+}
+h3 ,h5{
+    position: relative;
+    top:75px;
+    font-family: sans-serif;
+    font-weight: 250px;;
+    font-size: 35px;
+    padding:20px;
+}
+h5{
+    font-weight: 15px;;
+    font-size: 15px;
+    top:40px;
+    margin-left: 30px;
+}
+
+span{
+    color:rgb(221, 92, 221);
+}
+.port-img p{
+    position: absolute;
+    top:155px;
+    left:45px;
+}
+.port-img h3{
+    margin-left: 25px;
+}
+.hire-me button{
+    width:125px;
+    height:25px;
+    color:white;
+    background-color: transparent;
+    border: 2px  solid rgb(221, 92, 221);
+
+position: relative;
+
+top:35px;
+left:-125px;
+border-radius: 13px;
+transition: all;
+transition-duration: 0.3s;
+
+
+}
+
+button:hover{
+    background-color: rgb(221, 92, 221);
+    transition-timing-function:step-start;
+
+    
+}
+
+.hire-me button :hover{
+    background-color: none;
+}
+.i-am p{
+    width: 175px;
+    height:75px;
+    position: relative;
+    top:35px;
+    left:45px;
+}
+.my-img {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("IMG_1247-01.jpeg.jpg");
+    background-size: cover;
+    width:240px;
+    height:240px;
+    margin-left:95px;
+    border-radius: 120px;
+    display: flex;
+}
+.my-img:hover{
+    box-shadow: 0px 0px 12px rgb(221, 92, 221);
+}
+
+.me{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 155%;
+}
+.me-p{
+    font-size: 15px;;
+    font-family: sans-serif;
+    width:425px;
+    height:55px;
+
+}
+.skills-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width:456px;
+    height: 25px;
+    margin-right: 75px;
+    
+}
+
+.skills-nav a{
+    
+    text-decoration: none;
+}
+    
+.skills-nav a:hover
+{
+    text-decoration: underline rgb(221, 92, 221) ;
+    
+}
+ul,li{
+    list-style-type: decimal;
+    width: 180px;
+    height: 15px;
+    padding: 14px 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 55px;
+}
+.Service- h1{
+    font-size: 45px;
+    font-weight: 25px;
+    padding:0 45px;
+}
+.Service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:-45px;
+    
+    margin-top: 50px;
+}
+.Service-list div{
+    padding:15px;
+    background: #2b2a2a;
+    border-radius: 15px;
+    width: 270px;
+    height:200px;
+    margin-left: 35px;
+    transition: background 0.5s,transform 0.5s;
+}
+.Service-list div i,h1{
+    padding-left: 15px;
+    font-size: 25px;
+    font-weight: 25px;
+    margin-bottom: 12px;
+}
+.Service-list div h2{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 25px;
+    margin-bottom: 15px;
+}
+.Service-list div p{
+    padding-left: 8px;
+    font-size: 15px;
+    align-items: center;
+
+}
+.Service-list div:hover{
+    background: rgba(221, 92, 221,0.8);
+    transform: translateY(-15px);
+}
+.my-skills- h1{
+    font-size: 35px;
+    font-weight: 34px;
+    padding: 0 35px;
+    margin-top: 25px;
+}
+
+.html ,.css ,.dsa {
+    width:220px;
+    height:240px;
+    background: white;
+    position: relative;
+    left:15px;
+    border-radius: 15px;
+    transition: background 0.5s,transform 0.5s;
+
+}
+.html:hover{
+    background:rgba(221, 92, 221,0.8);
+    
+    transform: translateY(-10px);
+}
+.dsa:hover{
+    background:rgba(221, 92, 221,0.8);
+    
+    transform: translateY(-10px);
+}
+.css:hover{
+    background:rgba(221, 92, 221,0.8);
+    
+    transform: translateY(-10px);
+}
+.svg-cirlce svg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left:30px;
+    top:30px;
+    
+}
+.css-circle svg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left:30px;
+    top:30px
+}
+.dsa-circle svg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left:30px;
+    top:30px
+}
+.css-circle svg{
+    width:150px;
+    height:150x;
+}
+.css-circle svg circle{
+    fill:none;
+    stroke-width: 10;
+    stroke:rgb(77, 176, 176);
+    transform: translate(5px,5px);
+    stroke-dasharray: 440px;
+    stroke-dasharray: 440px;
+}
+.css-circle svg circle:nth-child(1)
+{
+    stroke:azure;
+    stroke-dashoffset: 0px;
+}
+.css-circle svg circle:nth-child(2)
+{
+    stroke-dashoffset: 60%;
+}
+
+.dsa-circle svg{
+    width:150px;
+    height:150px;
+
+}
+.dsa-circle svg circle{
+    fill: none;
+    stroke-width: 10;
+    stroke:rgb(77, 176, 176);
+    
+transform: translate(5px,5px);
+stroke-dasharray: 440px;
+stroke-dashoffset:440px ;
+}
+.dsa-circle svg circle:nth-child(1)
+{
+    stroke: azure;
+    stroke-dashoffset:0px ;
+}
+.dsa-circle svg circle:nth-child(2)
+{
+    stroke-dashoffset:80% ;
+    stroke:rgb(77, 176, 176);
+}
+.svg-cirlce svg circle{
+    fill: none;
+    stroke-width: 10;
+    stroke:rgb(77, 176, 176);
+    
+transform: translate(5px,5px);
+stroke-dasharray: 440px;
+stroke-dashoffset: 440px;
+
+}
+.svg-cirlce svg circle:nth-child(1)
+{
+    
+    stroke-dashoffset: 0px;
+    stroke:rgb(243, 243, 240);
+}
+.svg-cirlce svg circle:nth-child(2)
+{
+    stroke-dashoffset: 20%;
+}
+
+.html .number{
+    position: absolute;
+    top:5px;
+    left:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.css-number,.dsa-number{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.css-css,.dsa-dsa{
+    position:absolute;
+    top:85px;
+    left:40px;
+}
+.html .number h3{
+    
+    font-size: 30px;
+    
+}
+.html .number-html{
+    position: absolute;
+    top:95px;
+    left:35px;
+}
+    
+
+.my-skills .container{
+    display: flex;
+    justify-content: space-around;
+}
+.my-skills span{
+    color: white;
+    
+}
+.See-more button{
+    width: 75px;
+    height:30px;
+    margin-top: 15px;
+    color:white;
+    border:none;
+    
+}
+.See-more{
+    padding:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.See-more button{
+    background-color: transparent;
+    border:2px solid rgba(221, 92, 221,0.8);
+    border-radius: 5px;
+    margin-left: -45px;
+}
+.contact-me {
+    font-size: 25px;
+    font-weight: 30px;
+    font-family: sans-serif;
+    margin-left: 75px;
+    padding:2px;
+    display: flex;
+}
+.contact-me input, button{
+    margin-left: 300px;
+    
+}
+.contact-me input{
+    padding:0 120px;
+    border: none;
+    border-radius: 3px;
+    height: 35px;
+    margin-bottom: 25px;
+}
+.submit button{
+    width: 75px;
+    height:30px;
+    margin-top: 15px;
+    color:white;
+    border:none;
+}
+.submit button{
+    background-color: transparent;
+    border:2px solid rgba(221, 92, 221,0.8);
+    border-radius: 5px;
+}
+.email-logo{
+    position: relative;
+    top:-270px;
+    left:85px;
+}
+
+.email-ex h3 {
+
+    top:-310px;
+    margin-left: 85px;
+    font-size: 12px;
+    font-weight: 14px;
+}
+.mbl i{
+    position: relative;
+    top:-300px;
+    left:85px;
+}
+.mbl h3{
+    top:-340px;
+    margin-left: 85px;
+    font-size: 12px;
+    font-weight: 14px;
+}
+.down button{
+    top:-320px;
+    width: 100px;
+    height:30px;
+    
+    margin-left:95px;
+    margin-top: -310px;
+    color:white;
+    border:none;
+    border-radius: 5px;
+
+    background-color:rgba(221, 92, 221,0.8) ;
+}
+.social-media{
+    position: relative;
+    top:-345px;
+    left:95px;
+
+}
+.down{
+    position: relative;
+    top:-280px;
+}
+.social-media i{
+    padding-left: 5px;
+}
+.input input{
+    background-color:#2b2a2a;
+
+}
+input :placeholder-shown{
+    position: relative;
+    padding: 0px;
+}
+.yourmes input{
+    height: 150px;
+}
